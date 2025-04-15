@@ -1,2 +1,4 @@
 # WebPortal
-web portal for Clan1001 UWA
+Web Portal for Clan1001 UWA
+NAME:Jacob Popal
+Student Number: 23940384
