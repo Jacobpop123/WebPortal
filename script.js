@@ -10,3 +10,8 @@ tabs.forEach(tab => {
         target.classList.add('active');
     })
 })
+
+document.querySelector('.accordion-header').addEventListener('click', function () {
+  const content = document.querySelector('.accordion-content');
+  content.style.display = content.style.display === 'block' ? 'none' : 'block';
+});
