@@ -1,4 +1,4 @@
-/* Reset default spacing */
+/* Global Reset and Base Styling */
 * {
     margin: 0;
     padding: 0px;
@@ -6,7 +6,6 @@
     box-sizing: border-box;
 }
 
-/* Body styling */
 body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
@@ -23,7 +22,7 @@ body {
     background-repeat: no-repeat;
 }
 
-/* Navbar */
+/* Navbar Styling */
 .navbar {
     position: fixed;
     top: 0;
@@ -51,33 +50,33 @@ body {
     background-color: #444;
 }
 
-/* Tab contents */
+/* Tab Content Container Styling */
 .tab-contents {
-    display: none; /* Hide all tabs by default */
+    display: none;
 }
 
 .tab-contents.active {
-    display: block; /* Show the active tab */
+    display: block;
 }
 
-/* Grid layout ONLY for the first tab */
+/* Home Tab Grid Layout */
 #home .grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
-    gap: 20px; /* Space between grid items */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
     padding: 20px;
     text-align: center;
 }
 
 #home .grid-item {
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     padding: 20px;
     border-radius: 10px;
     font-size: 1.2em;
 }
 
-/* Footer styling */
+/* Footer Styling */
 footer {
     margin-top: auto;
     padding: 20px;
@@ -86,23 +85,15 @@ footer {
     font-size: 14px;
 }
 
-/* Specific styles for content within each tab */
-#home {
-    background-color: rgba(0, 0, 0, 0.3);
-}
-
-#about {
-    background-color: rgba(0, 0, 0, 0.3);
-}
-
-#review {
-    background-color: rgba(0, 0, 0, 0.3);
-}
-
+/* Tab Backgrounds */
+#home,
+#about,
+#review,
 #contact {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
+/* Home Tab Styling */
 .home-tab {
     position: relative;
     width: 100%;
@@ -121,12 +112,13 @@ footer {
     text-align: center;
 }
 
+/* Accordion Styling */
 .accordion {
-    width: 290px; 
+    width: 290px;
     position: absolute;
     top: 45%;
-    left: 0%; 
-    transform: translateY(-50%); 
+    left: 0%;
+    transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.8);
     padding: 20px;
     border-radius: 10px;
@@ -134,43 +126,40 @@ footer {
     text-align: left;
 }
 
-/* Accordion Content Styling */
-.accordion-content {
-    display: none; /* Initially hidden */
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
-    color: black; /* Dark text for better contrast */
-    border-left: 3px solid #3498db;
-    margin-top: 10px;
-}
-
-/* Accordion Header Hover */
-.accordion-header:hover {
-    color: #3498db; /* Hover color */
-}
-
-/* Show content when header is clicked */
-.accordion-header.active + .accordion-content {
-    display: block; /* Show content when active */
-}
 .accordion-header {
-    font-size: 1.5em; /* Adjust the size if needed */
+    font-size: 1.5em;
     font-weight: bold;
     cursor: pointer;
     color: white;
     text-align: left;
 }
 
-/* Style for the CLICK HERE text */
 .accordion-header .click-here {
-    display: block; 
-    font-size: 1.2em; 
-    color: red; 
+    display: block;
+    font-size: 1.2em;
+    color: red;
     margin-top: 5px;
-    font-weight: normal; 
+    font-weight: normal;
 }
 
+.accordion-header:hover {
+    color: #3498db;
+}
 
+.accordion-content {
+    display: none;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    border-left: 3px solid #3498db;
+    margin-top: 10px;
+}
+
+.accordion-header.active + .accordion-content {
+    display: block;
+}
+
+/* Reviews Section Styling */
 .review-section {
     margin-top: 30px;
     background-color: rgba(0, 0, 0, 0.6);
@@ -210,7 +199,7 @@ footer {
     color: #ddd;
 }
 
-/* Myth Tab Styling */
+/* Myth Section Styling */
 #myth {
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
@@ -245,6 +234,7 @@ footer {
     color: #f1f1f1;
 }
 
+/* Lessons Section Styling */
 .lessons-container {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 30px;
@@ -281,3 +271,32 @@ footer {
     font-size: 1.5em;
     color: #ffcc70;
 }
+
+/* Myth and Lessons Box Styling */
+.myth-box, .lessons-box {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    margin-bottom: 30px;
+}
+
+.myth-box h2, .lessons-box h2 {
+    font-size: 2.5em;
+    color: #ffcc70;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.lessons-box ul {
+    list-style-type: none;
+    padding-left: 0;
+    color: #f1f1f1;
+    font-size: 1.2em;
+}
+
+.lessons-box li {
+    margin-bottom: 15px;
+}
+
+
