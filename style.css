@@ -17,7 +17,14 @@ body {
     align-items: center;
     padding: 20px;
 }
-
+body {
+    background-image: url('background.jpg'); /* make sure the image is in the same folder */
+    background-size: cover;       /* make it cover the whole page */
+    background-position: center;  /* center the image */
+    background-repeat: no-repeat; /* don't repeat the image */
+    font-family: Arial, sans-serif;
+    color: white; /* change text color for contrast */
+}
 /* Container for content */
 .container {
     text-align: center;
